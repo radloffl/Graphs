@@ -1,0 +1,433 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B2126E731D6E787100FCD648 /* ClientHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = B2126E721D6E787100FCD648 /* ClientHeaderView.m */; };
+		B2126E761D73DD8000FCD648 /* ClientTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2126E751D73DD7F00FCD648 /* ClientTableViewController.m */; };
+		B2126E791D74C03400FCD648 /* ClientMetric.m in Sources */ = {isa = PBXBuildFile; fileRef = B2126E781D74C03400FCD648 /* ClientMetric.m */; };
+		B2126E7F1D7E143B00FCD648 /* AddDataTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2126E7E1D7E143B00FCD648 /* AddDataTableViewController.m */; };
+		B21933EB1D662A21005E5F49 /* GraphPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = B21933EA1D662A21005E5F49 /* GraphPoint.m */; };
+		B224CFFB1D8B80B500677039 /* EditDataTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B224CFFA1D8B80B500677039 /* EditDataTableViewController.m */; };
+		B23CC8781D6A598300C26D34 /* GraphTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B23CC8771D6A598300C26D34 /* GraphTableViewCell.m */; };
+		B23CC87B1D6A5A9100C26D34 /* ClientStatisticsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B23CC87A1D6A5A9100C26D34 /* ClientStatisticsViewController.m */; };
+		B25405D31D8F0D6700BFA225 /* ClientTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B25405D21D8F0D6700BFA225 /* ClientTableViewCell.m */; };
+		B25405D61D917D0B00BFA225 /* Client.m in Sources */ = {isa = PBXBuildFile; fileRef = B25405D51D917D0B00BFA225 /* Client.m */; };
+		B26BE3901D823B12007A806C /* UIColor+DefaultThemeColors.m in Sources */ = {isa = PBXBuildFile; fileRef = B26BE38F1D823B12007A806C /* UIColor+DefaultThemeColors.m */; };
+		B2828A711DA339E500B839AD /* AddClientViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2828A701DA339E500B839AD /* AddClientViewController.m */; };
+		B2828A741DA33CA200B839AD /* EditClientViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2828A731DA33CA200B839AD /* EditClientViewController.m */; };
+		B28704EB1D5D115C00FD071C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B28704EA1D5D115C00FD071C /* main.m */; };
+		B28704EE1D5D115C00FD071C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B28704ED1D5D115C00FD071C /* AppDelegate.m */; };
+		B28704F41D5D115D00FD071C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B28704F21D5D115D00FD071C /* Main.storyboard */; };
+		B28704F61D5D115D00FD071C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B28704F51D5D115D00FD071C /* Assets.xcassets */; };
+		B28704F91D5D115D00FD071C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B28704F71D5D115D00FD071C /* LaunchScreen.storyboard */; };
+		B28705021D5D119700FD071C /* GraphGrid.m in Sources */ = {isa = PBXBuildFile; fileRef = B28705011D5D119700FD071C /* GraphGrid.m */; };
+		B287050B1D5D530600FD071C /* GraphView.m in Sources */ = {isa = PBXBuildFile; fileRef = B287050A1D5D530600FD071C /* GraphView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B2126E711D6E787100FCD648 /* ClientHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClientHeaderView.h; sourceTree = "<group>"; };
+		B2126E721D6E787100FCD648 /* ClientHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClientHeaderView.m; sourceTree = "<group>"; };
+		B2126E741D73DD7F00FCD648 /* ClientTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClientTableViewController.h; sourceTree = "<group>"; };
+		B2126E751D73DD7F00FCD648 /* ClientTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClientTableViewController.m; sourceTree = "<group>"; };
+		B2126E771D74C03400FCD648 /* ClientMetric.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClientMetric.h; sourceTree = "<group>"; };
+		B2126E781D74C03400FCD648 /* ClientMetric.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClientMetric.m; sourceTree = "<group>"; };
+		B2126E7D1D7E143B00FCD648 /* AddDataTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddDataTableViewController.h; sourceTree = "<group>"; };
+		B2126E7E1D7E143B00FCD648 /* AddDataTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddDataTableViewController.m; sourceTree = "<group>"; };
+		B21933E91D662A21005E5F49 /* GraphPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GraphPoint.h; sourceTree = "<group>"; };
+		B21933EA1D662A21005E5F49 /* GraphPoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GraphPoint.m; sourceTree = "<group>"; };
+		B224CFF91D8B80B500677039 /* EditDataTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditDataTableViewController.h; sourceTree = "<group>"; };
+		B224CFFA1D8B80B500677039 /* EditDataTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditDataTableViewController.m; sourceTree = "<group>"; };
+		B23CC8761D6A598300C26D34 /* GraphTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GraphTableViewCell.h; sourceTree = "<group>"; };
+		B23CC8771D6A598300C26D34 /* GraphTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GraphTableViewCell.m; sourceTree = "<group>"; };
+		B23CC8791D6A5A9100C26D34 /* ClientStatisticsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClientStatisticsViewController.h; sourceTree = "<group>"; };
+		B23CC87A1D6A5A9100C26D34 /* ClientStatisticsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClientStatisticsViewController.m; sourceTree = "<group>"; };
+		B25405D11D8F0D6700BFA225 /* ClientTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClientTableViewCell.h; sourceTree = "<group>"; };
+		B25405D21D8F0D6700BFA225 /* ClientTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClientTableViewCell.m; sourceTree = "<group>"; };
+		B25405D41D917D0B00BFA225 /* Client.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Client.h; sourceTree = "<group>"; };
+		B25405D51D917D0B00BFA225 /* Client.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Client.m; sourceTree = "<group>"; };
+		B26BE38E1D823B12007A806C /* UIColor+DefaultThemeColors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+DefaultThemeColors.h"; sourceTree = "<group>"; };
+		B26BE38F1D823B12007A806C /* UIColor+DefaultThemeColors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+DefaultThemeColors.m"; sourceTree = "<group>"; };
+		B2828A6F1DA339E500B839AD /* AddClientViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddClientViewController.h; sourceTree = "<group>"; };
+		B2828A701DA339E500B839AD /* AddClientViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddClientViewController.m; sourceTree = "<group>"; };
+		B2828A721DA33CA200B839AD /* EditClientViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditClientViewController.h; sourceTree = "<group>"; };
+		B2828A731DA33CA200B839AD /* EditClientViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditClientViewController.m; sourceTree = "<group>"; };
+		B28704E61D5D115C00FD071C /* Graphs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Graphs.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B28704EA1D5D115C00FD071C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B28704EC1D5D115C00FD071C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B28704ED1D5D115C00FD071C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B28704F31D5D115D00FD071C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B28704F51D5D115D00FD071C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B28704F81D5D115D00FD071C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B28704FA1D5D115D00FD071C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B28705001D5D119700FD071C /* GraphGrid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GraphGrid.h; sourceTree = "<group>"; };
+		B28705011D5D119700FD071C /* GraphGrid.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GraphGrid.m; sourceTree = "<group>"; };
+		B28705091D5D530600FD071C /* GraphView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GraphView.h; path = ../GraphView.h; sourceTree = "<group>"; };
+		B287050A1D5D530600FD071C /* GraphView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GraphView.m; path = ../GraphView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B28704E31D5D115C00FD071C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B2126E7A1D76140700FCD648 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B25405D11D8F0D6700BFA225 /* ClientTableViewCell.h */,
+				B25405D21D8F0D6700BFA225 /* ClientTableViewCell.m */,
+				B2126E711D6E787100FCD648 /* ClientHeaderView.h */,
+				B2126E721D6E787100FCD648 /* ClientHeaderView.m */,
+				B28705001D5D119700FD071C /* GraphGrid.h */,
+				B28705011D5D119700FD071C /* GraphGrid.m */,
+				B23CC8761D6A598300C26D34 /* GraphTableViewCell.h */,
+				B23CC8771D6A598300C26D34 /* GraphTableViewCell.m */,
+				B28705091D5D530600FD071C /* GraphView.h */,
+				B287050A1D5D530600FD071C /* GraphView.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		B2126E7B1D76146500FCD648 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				B224CFF91D8B80B500677039 /* EditDataTableViewController.h */,
+				B224CFFA1D8B80B500677039 /* EditDataTableViewController.m */,
+				B2126E7D1D7E143B00FCD648 /* AddDataTableViewController.h */,
+				B2126E7E1D7E143B00FCD648 /* AddDataTableViewController.m */,
+				B23CC8791D6A5A9100C26D34 /* ClientStatisticsViewController.h */,
+				B23CC87A1D6A5A9100C26D34 /* ClientStatisticsViewController.m */,
+				B2828A6F1DA339E500B839AD /* AddClientViewController.h */,
+				B2828A701DA339E500B839AD /* AddClientViewController.m */,
+				B2828A721DA33CA200B839AD /* EditClientViewController.h */,
+				B2828A731DA33CA200B839AD /* EditClientViewController.m */,
+				B2126E741D73DD7F00FCD648 /* ClientTableViewController.h */,
+				B2126E751D73DD7F00FCD648 /* ClientTableViewController.m */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		B2126E7C1D7614C100FCD648 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B25405D41D917D0B00BFA225 /* Client.h */,
+				B25405D51D917D0B00BFA225 /* Client.m */,
+				B2126E771D74C03400FCD648 /* ClientMetric.h */,
+				B2126E781D74C03400FCD648 /* ClientMetric.m */,
+				B21933E91D662A21005E5F49 /* GraphPoint.h */,
+				B21933EA1D662A21005E5F49 /* GraphPoint.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		B26BE3911D823BAD007A806C /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				B26BE38E1D823B12007A806C /* UIColor+DefaultThemeColors.h */,
+				B26BE38F1D823B12007A806C /* UIColor+DefaultThemeColors.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		B28704DD1D5D115C00FD071C = {
+			isa = PBXGroup;
+			children = (
+				B28704E81D5D115C00FD071C /* Graphs */,
+				B28704E71D5D115C00FD071C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B28704E71D5D115C00FD071C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B28704E61D5D115C00FD071C /* Graphs.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B28704E81D5D115C00FD071C /* Graphs */ = {
+			isa = PBXGroup;
+			children = (
+				B28704EC1D5D115C00FD071C /* AppDelegate.h */,
+				B28704ED1D5D115C00FD071C /* AppDelegate.m */,
+				B26BE3911D823BAD007A806C /* Categories */,
+				B2126E7A1D76140700FCD648 /* Views */,
+				B2126E7B1D76146500FCD648 /* ViewControllers */,
+				B2126E7C1D7614C100FCD648 /* Model */,
+				B28704F21D5D115D00FD071C /* Main.storyboard */,
+				B28704F51D5D115D00FD071C /* Assets.xcassets */,
+				B28704F71D5D115D00FD071C /* LaunchScreen.storyboard */,
+				B28704FA1D5D115D00FD071C /* Info.plist */,
+				B28704E91D5D115C00FD071C /* Supporting Files */,
+			);
+			path = Graphs;
+			sourceTree = "<group>";
+		};
+		B28704E91D5D115C00FD071C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B28704EA1D5D115C00FD071C /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B28704E51D5D115C00FD071C /* Graphs */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B28704FD1D5D115D00FD071C /* Build configuration list for PBXNativeTarget "Graphs" */;
+			buildPhases = (
+				B28704E21D5D115C00FD071C /* Sources */,
+				B28704E31D5D115C00FD071C /* Frameworks */,
+				B28704E41D5D115C00FD071C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Graphs;
+			productName = Graphs;
+			productReference = B28704E61D5D115C00FD071C /* Graphs.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B28704DE1D5D115C00FD071C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "Logan Radloff";
+				TargetAttributes = {
+					B28704E51D5D115C00FD071C = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = VTQTL6KLL4;
+					};
+				};
+			};
+			buildConfigurationList = B28704E11D5D115C00FD071C /* Build configuration list for PBXProject "Graphs" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B28704DD1D5D115C00FD071C;
+			productRefGroup = B28704E71D5D115C00FD071C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B28704E51D5D115C00FD071C /* Graphs */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B28704E41D5D115C00FD071C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B28704F91D5D115D00FD071C /* LaunchScreen.storyboard in Resources */,
+				B28704F61D5D115D00FD071C /* Assets.xcassets in Resources */,
+				B28704F41D5D115D00FD071C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B28704E21D5D115C00FD071C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B224CFFB1D8B80B500677039 /* EditDataTableViewController.m in Sources */,
+				B2126E731D6E787100FCD648 /* ClientHeaderView.m in Sources */,
+				B25405D31D8F0D6700BFA225 /* ClientTableViewCell.m in Sources */,
+				B2126E761D73DD8000FCD648 /* ClientTableViewController.m in Sources */,
+				B2126E7F1D7E143B00FCD648 /* AddDataTableViewController.m in Sources */,
+				B28704EE1D5D115C00FD071C /* AppDelegate.m in Sources */,
+				B287050B1D5D530600FD071C /* GraphView.m in Sources */,
+				B23CC87B1D6A5A9100C26D34 /* ClientStatisticsViewController.m in Sources */,
+				B23CC8781D6A598300C26D34 /* GraphTableViewCell.m in Sources */,
+				B21933EB1D662A21005E5F49 /* GraphPoint.m in Sources */,
+				B28704EB1D5D115C00FD071C /* main.m in Sources */,
+				B2828A711DA339E500B839AD /* AddClientViewController.m in Sources */,
+				B26BE3901D823B12007A806C /* UIColor+DefaultThemeColors.m in Sources */,
+				B2828A741DA33CA200B839AD /* EditClientViewController.m in Sources */,
+				B2126E791D74C03400FCD648 /* ClientMetric.m in Sources */,
+				B28705021D5D119700FD071C /* GraphGrid.m in Sources */,
+				B25405D61D917D0B00BFA225 /* Client.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B28704F21D5D115D00FD071C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B28704F31D5D115D00FD071C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B28704F71D5D115D00FD071C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B28704F81D5D115D00FD071C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B28704FB1D5D115D00FD071C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B28704FC1D5D115D00FD071C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B28704FE1D5D115D00FD071C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = Graphs/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.LoganRadoff.Graphs;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B28704FF1D5D115D00FD071C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = Graphs/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.LoganRadoff.Graphs;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B28704E11D5D115C00FD071C /* Build configuration list for PBXProject "Graphs" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B28704FB1D5D115D00FD071C /* Debug */,
+				B28704FC1D5D115D00FD071C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B28704FD1D5D115D00FD071C /* Build configuration list for PBXNativeTarget "Graphs" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B28704FE1D5D115D00FD071C /* Debug */,
+				B28704FF1D5D115D00FD071C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B28704DE1D5D115C00FD071C /* Project object */;
+}
