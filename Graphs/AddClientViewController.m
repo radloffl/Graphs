@@ -19,6 +19,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.tableView.scrollEnabled = NO;
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"client add prompt"];
     
     _addPrompts = [[NSMutableArray alloc] init];
@@ -142,10 +143,45 @@
         [cell.contentView addConstraints:heightNameConstraintVertical];
     } else if (indexPath.row == 4) {
         cell.textLabel.text = _addPrompts[indexPath.row];
+        
+        CGRect rect = CGRectMake(0, 0, 100, 100);
+        UIGraphicsBeginImageContext(rect.size);
+        CGContextRef context = UIGraphicsGetCurrentContext();
+        CGContextSetFillColorWithColor(context, [UIColor grayColor].CGColor);
+        CGContextFillRect(context, rect);
+        UIImage *blank = UIGraphicsGetImageFromCurrentImageContext();
+        UIGraphicsEndImageContext();
+        _clientImageView = [[UIImageView alloc] initWithImage:blank];
+        _clientImageView.translatesAutoresizingMaskIntoConstraints = NO;
+        [cell.contentView addSubview:_clientImageView];
+        
+        NSArray *heightConstraintHorizontal = [NSLayoutConstraint constraintsWithVisualFormat:@"H:|-(>=0)-[_clientImageView]|" options:NSLayoutFormatAlignAllTop metrics:nil views:@{@"_clientImageView": _clientImageView}];
+        NSArray *heightNameConstraintVertical = [NSLayoutConstraint constraintsWithVisualFormat:@"V:|-[_clientImageView]-|" options:NSLayoutFormatAlignAllTop metrics:nil views:@{@"_clientImageView": _clientImageView}];
+        NSLayoutConstraint *squareConstraint = [NSLayoutConstraint constraintWithItem:_clientImageView
+                                                                            attribute:NSLayoutAttributeWidth
+                                                                            relatedBy:NSLayoutRelationEqual
+                                                                               toItem:_clientImageView
+                                                                            attribute:NSLayoutAttributeHeight
+                                                                           multiplier:1.0
+                                                                             constant:0];
+        [cell.contentView addConstraints:heightConstraintHorizontal];
+        [cell.contentView addConstraints:heightNameConstraintVertical];
+        [cell.contentView addConstraint:squareConstraint];
+        
         cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     }
     
     return cell;
+}
+
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    if (indexPath.row == 4) {
+        CGFloat height;
+        height = 60;
+        return height;
+    } else {
+        return [super tableView:tableView heightForRowAtIndexPath:indexPath];
+    }
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {

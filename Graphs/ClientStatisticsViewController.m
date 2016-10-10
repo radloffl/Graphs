@@ -181,7 +181,8 @@
                                                                           views:views];
     
     NSNumber *statusBarPadding = [UIApplication sharedApplication].isStatusBarHidden ? @0 : @20;
-    statusBarPadding = self.splitViewController.isCollapsed ? @12 : statusBarPadding;
+    statusBarPadding = self.splitViewController.isCollapsed ? @4 : statusBarPadding;
+    
     NSDictionary *m = @{@"height":[NSNumber numberWithFloat: ((UINavigationController *)self.splitViewController.viewControllers[0]).navigationBar.frame.size.height+statusBarPadding.floatValue]};
     NSArray *verticalLayout = [NSLayoutConstraint constraintsWithVisualFormat:@"V:|[_clientHeader(height)][_tableView]|"
                                                                       options:NSLayoutFormatAlignAllLeft

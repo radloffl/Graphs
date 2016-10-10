@@ -14,6 +14,7 @@
 @property UITextField *lastName;
 @property UITextField *dateOfBirth;
 @property UITextField *height;
+@property UIImageView *clientImageView;
 
 @property UIPickerView *heightPicker;
 @property UIDatePicker *dateOfBirthPicker;

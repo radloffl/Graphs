@@ -146,7 +146,7 @@
     AddClientViewController *addClientVC = [[AddClientViewController alloc] init];
     UINavigationController *nvc = [[UINavigationController alloc] initWithRootViewController:addClientVC];
     nvc.modalPresentationStyle = UIModalPresentationPopover;
-    nvc.preferredContentSize = CGSizeMake(400, 225);
+    nvc.preferredContentSize = CGSizeMake(400, 240);
     nvc.popoverPresentationController.barButtonItem = self.navigationItem.leftBarButtonItem;
     nvc.popoverPresentationController.permittedArrowDirections = UIPopoverArrowDirectionUp;
     [self presentViewController:nvc animated:YES completion:nil];
