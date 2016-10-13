@@ -6,31 +6,20 @@
 //  Copyright © 2016 Logan Radloff. All rights reserved.
 //
 
-#import "AddClientViewController.h"
+#import "AddEditClientViewController.h"
 
-@interface AddClientViewController ()
+@interface AddEditClientViewController ()
 
 @end
 
-@implementation AddClientViewController {
-    NSMutableArray<NSString *>* _addPrompts;
-}
+@implementation AddEditClientViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
     self.tableView.scrollEnabled = NO;
-    [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"client add prompt"];
+    [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"modify client"];
     
-    _addPrompts = [[NSMutableArray alloc] init];
-    [_addPrompts addObject:@"First Name"];
-    [_addPrompts addObject:@"Last Name"];
-    [_addPrompts addObject:@"Age"];
-    [_addPrompts addObject:@"Height"];
-    [_addPrompts addObject:@"Client Image"];
-    
-    
-    self.navigationItem.title = @"Add Client";
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCancel target:self action:@selector(_dimiss)];
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemSave target:self action:@selector(_save)];
 }
@@ -55,11 +44,11 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return _addPrompts.count;
+    return 5;
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"client add prompt" forIndexPath:indexPath];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"modify client" forIndexPath:indexPath];
     
     // Configure the cell...
     if (indexPath.row == 0) {
@@ -75,6 +64,9 @@
         [cell addConstraints:firstNameConstraintHorizontal];
         [cell addConstraints:firstNameConstraintVertical];
         
+        if (_client != nil) {
+            _firstName.text = _client.firstName;
+        }
         
     } else if (indexPath.row == 1) {
         _lastName = [UITextField new];
@@ -88,6 +80,10 @@
         
         [cell.contentView addConstraints:lastNameConstraintHorizontal];
         [cell.contentView addConstraints:lastNameConstraintVertical];
+        
+        if (_client != nil) {
+            _lastName.text = _client.lastName;
+        }
         
     } else if (indexPath.row == 2) {
         _dateOfBirth = [UITextField new];
@@ -115,6 +111,10 @@
         [cell.contentView addConstraints:ageConstraintHorizontal];
         [cell.contentView addConstraints:ageNameConstraintVertical];
         
+        if (_client != nil) {
+            _dateOfBirth.text = _client.dateOfBirth;
+        }
+        
     } else if (indexPath.row == 3) {
         _height = [UITextField new];
         _height.placeholder = @"Height";
@@ -141,8 +141,13 @@
         
         [cell.contentView addConstraints:heightConstraintHorizontal];
         [cell.contentView addConstraints:heightNameConstraintVertical];
+        
+        if (_client != nil) {
+            _height.text = _client.height;
+        }
+        
     } else if (indexPath.row == 4) {
-        cell.textLabel.text = _addPrompts[indexPath.row];
+        cell.textLabel.text = @"Client Image";
         
         CGRect rect = CGRectMake(0, 0, 100, 100);
         UIGraphicsBeginImageContext(rect.size);
@@ -216,7 +221,7 @@
 - (void)dateOfBirthDoneTouched:(UIBarButtonItem *) sender {
     NSDate *dateOfBirth = _dateOfBirthPicker.date;
     NSDateFormatter * df = [[NSDateFormatter alloc] init];
-    df.dateStyle = NSDateFormatterMediumStyle;
+    df.dateStyle = NSDateFormatterShortStyle;
     _dateOfBirth.text = [df stringFromDate:dateOfBirth];
     [_dateOfBirth resignFirstResponder];
 }

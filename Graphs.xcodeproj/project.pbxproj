@@ -18,8 +18,8 @@
 		B25405D31D8F0D6700BFA225 /* ClientTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B25405D21D8F0D6700BFA225 /* ClientTableViewCell.m */; };
 		B25405D61D917D0B00BFA225 /* Client.m in Sources */ = {isa = PBXBuildFile; fileRef = B25405D51D917D0B00BFA225 /* Client.m */; };
 		B26BE3901D823B12007A806C /* UIColor+DefaultThemeColors.m in Sources */ = {isa = PBXBuildFile; fileRef = B26BE38F1D823B12007A806C /* UIColor+DefaultThemeColors.m */; };
-		B2828A711DA339E500B839AD /* AddClientViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2828A701DA339E500B839AD /* AddClientViewController.m */; };
-		B2828A741DA33CA200B839AD /* EditClientViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2828A731DA33CA200B839AD /* EditClientViewController.m */; };
+		B2828A711DA339E500B839AD /* AddEditClientViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2828A701DA339E500B839AD /* AddEditClientViewController.m */; };
+		B2828A741DA33CA200B839AD /* EditClientTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2828A731DA33CA200B839AD /* EditClientTableViewController.m */; };
 		B28704EB1D5D115C00FD071C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B28704EA1D5D115C00FD071C /* main.m */; };
 		B28704EE1D5D115C00FD071C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B28704ED1D5D115C00FD071C /* AppDelegate.m */; };
 		B28704F41D5D115D00FD071C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B28704F21D5D115D00FD071C /* Main.storyboard */; };
@@ -52,10 +52,10 @@
 		B25405D51D917D0B00BFA225 /* Client.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Client.m; sourceTree = "<group>"; };
 		B26BE38E1D823B12007A806C /* UIColor+DefaultThemeColors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+DefaultThemeColors.h"; sourceTree = "<group>"; };
 		B26BE38F1D823B12007A806C /* UIColor+DefaultThemeColors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+DefaultThemeColors.m"; sourceTree = "<group>"; };
-		B2828A6F1DA339E500B839AD /* AddClientViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddClientViewController.h; sourceTree = "<group>"; };
-		B2828A701DA339E500B839AD /* AddClientViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddClientViewController.m; sourceTree = "<group>"; };
-		B2828A721DA33CA200B839AD /* EditClientViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditClientViewController.h; sourceTree = "<group>"; };
-		B2828A731DA33CA200B839AD /* EditClientViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditClientViewController.m; sourceTree = "<group>"; };
+		B2828A6F1DA339E500B839AD /* AddEditClientViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddEditClientViewController.h; sourceTree = "<group>"; };
+		B2828A701DA339E500B839AD /* AddEditClientViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddEditClientViewController.m; sourceTree = "<group>"; };
+		B2828A721DA33CA200B839AD /* EditClientTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditClientTableViewController.h; sourceTree = "<group>"; };
+		B2828A731DA33CA200B839AD /* EditClientTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditClientTableViewController.m; sourceTree = "<group>"; };
 		B28704E61D5D115C00FD071C /* Graphs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Graphs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B28704EA1D5D115C00FD071C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B28704EC1D5D115C00FD071C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -107,10 +107,10 @@
 				B2126E7E1D7E143B00FCD648 /* AddDataTableViewController.m */,
 				B23CC8791D6A5A9100C26D34 /* ClientStatisticsViewController.h */,
 				B23CC87A1D6A5A9100C26D34 /* ClientStatisticsViewController.m */,
-				B2828A6F1DA339E500B839AD /* AddClientViewController.h */,
-				B2828A701DA339E500B839AD /* AddClientViewController.m */,
-				B2828A721DA33CA200B839AD /* EditClientViewController.h */,
-				B2828A731DA33CA200B839AD /* EditClientViewController.m */,
+				B2828A6F1DA339E500B839AD /* AddEditClientViewController.h */,
+				B2828A701DA339E500B839AD /* AddEditClientViewController.m */,
+				B2828A721DA33CA200B839AD /* EditClientTableViewController.h */,
+				B2828A731DA33CA200B839AD /* EditClientTableViewController.m */,
 				B2126E741D73DD7F00FCD648 /* ClientTableViewController.h */,
 				B2126E751D73DD7F00FCD648 /* ClientTableViewController.m */,
 			);
@@ -263,9 +263,9 @@
 				B23CC8781D6A598300C26D34 /* GraphTableViewCell.m in Sources */,
 				B21933EB1D662A21005E5F49 /* GraphPoint.m in Sources */,
 				B28704EB1D5D115C00FD071C /* main.m in Sources */,
-				B2828A711DA339E500B839AD /* AddClientViewController.m in Sources */,
+				B2828A711DA339E500B839AD /* AddEditClientViewController.m in Sources */,
 				B26BE3901D823B12007A806C /* UIColor+DefaultThemeColors.m in Sources */,
-				B2828A741DA33CA200B839AD /* EditClientViewController.m in Sources */,
+				B2828A741DA33CA200B839AD /* EditClientTableViewController.m in Sources */,
 				B2126E791D74C03400FCD648 /* ClientMetric.m in Sources */,
 				B28705021D5D119700FD071C /* GraphGrid.m in Sources */,
 				B25405D61D917D0B00BFA225 /* Client.m in Sources */,

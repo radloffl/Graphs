@@ -6,13 +6,14 @@
 //  Copyright © 2016 Logan Radloff. All rights reserved.
 //
 
-#import "EditClientViewController.h"
+#import "EditClientTableViewController.h"
+#import "AddEditClientViewController.h"
 
-@interface EditClientViewController ()
+@interface EditClientTableViewController ()
 
 @end
 
-@implementation EditClientViewController 
+@implementation EditClientTableViewController 
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -21,7 +22,6 @@
     
     self.navigationItem.title = @"Select client to edit";
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCancel target:self action:@selector(_dimiss)];
-    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemSave target:self action:@selector(_save)];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -51,9 +51,15 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"client edit prompt" forIndexPath:indexPath];
     cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     // Configure the cell...
-    cell.textLabel.text = _clients[indexPath.row].clientName;
+    cell.textLabel.text = [NSString stringWithFormat:@"%@ %@",_clients[indexPath.row].firstName, _clients[indexPath.row].lastName];
     
     return cell;
+}
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    AddEditClientViewController *editVC = [[AddEditClientViewController alloc] init];
+    editVC.client = _clients[indexPath.row];
+    [self.navigationController pushViewController:editVC animated:YES];
 }
 
 @end

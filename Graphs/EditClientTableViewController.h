@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "Client.h"
 
-@interface EditClientViewController : UITableViewController
+@interface EditClientTableViewController : UITableViewController
 
 @property NSMutableArray<Client *>* clients;
 

@@ -10,8 +10,9 @@
 
 @interface Client : NSObject
 
-@property NSString *clientName;
+@property NSString *firstName;
+@property NSString *lastName;
 @property NSString *height;
-@property NSString *age;
+@property NSString *dateOfBirth;
 
 @end

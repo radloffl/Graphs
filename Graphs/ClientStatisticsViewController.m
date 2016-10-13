@@ -137,8 +137,19 @@
     _clientHeader.translatesAutoresizingMaskIntoConstraints = NO;
     [_clientHeader.addDataButton addTarget:self action:@selector(_presentAddDataView) forControlEvents:UIControlEventTouchUpInside];
     [_clientHeader.editDataButton addTarget:self action:@selector(_presentEditDataView) forControlEvents:UIControlEventTouchUpInside];
-    _clientHeader.clientName.text = _client.clientName;
-    _clientHeader.ageValueLabel.text = _client.age;
+    _clientHeader.clientName.text = [NSString stringWithFormat:@"%@ %@",_client.firstName,_client.lastName];
+    
+    NSDate* now = [NSDate date];
+    NSDateFormatter* DoBFormatter = [[NSDateFormatter alloc] init];
+    DoBFormatter.dateStyle = NSDateFormatterShortStyle;
+    NSDate *DoB = [DoBFormatter dateFromString:_client.dateOfBirth];
+    NSDateComponents* ageComponents = [[NSCalendar currentCalendar]
+                                       components:NSCalendarUnitYear
+                                       fromDate:DoB
+                                       toDate:now
+                                       options:0];
+    NSInteger age = [ageComponents year];
+    _clientHeader.ageValueLabel.text = [NSString stringWithFormat:@"%ld",(long)age];
     _clientHeader.heightValueLabel.text = _client.height;
     [self.view addSubview:_clientHeader];
 

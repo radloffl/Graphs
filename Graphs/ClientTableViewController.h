@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Client.h"
 
 @interface ClientTableViewController : UITableViewController
+
+@property NSMutableArray<Client *> *clients;
 
 @end

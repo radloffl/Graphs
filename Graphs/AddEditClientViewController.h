@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Client.h"
 
-@interface AddClientViewController : UITableViewController <UIImagePickerControllerDelegate, UINavigationControllerDelegate,UIPickerViewDelegate, UIPickerViewDataSource>
+@interface AddEditClientViewController : UITableViewController <UIImagePickerControllerDelegate, UINavigationControllerDelegate,UIPickerViewDelegate, UIPickerViewDataSource>
 
 @property UITextField *firstName;
 @property UITextField *lastName;
@@ -18,4 +19,6 @@
 
 @property UIPickerView *heightPicker;
 @property UIDatePicker *dateOfBirthPicker;
+
+@property Client *client;
 @end

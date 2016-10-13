@@ -9,18 +9,15 @@
 #import "ClientTableViewController.h"
 #import "ClientTableViewCell.h"
 #import "UIColor+DefaultThemeColors.h"
-#import "Client.h"
 #import "ClientStatisticsViewController.h"
-#import "AddClientViewController.h"
-#import "EditClientViewController.h"
+#import "AddEditClientViewController.h"
+#import "EditClientTableViewController.h"
 
 @interface ClientTableViewController ()
 
 @end
 
-@implementation ClientTableViewController {
-    NSMutableArray<Client *> *_clients;
-}
+@implementation ClientTableViewController
 
 - (instancetype)init
 {
@@ -28,11 +25,12 @@
     if (self) {
         
         _clients = [[NSMutableArray alloc] init];
-        for (int i = 0; i < 20; i++) {
+        for (int i = 0; i < 2; i++) {
             Client *temp = [[Client alloc] init];
-            temp.clientName = [NSString stringWithFormat:@"Client #%d", i+1];
-            temp.height = [NSString stringWithFormat:@"%d\"", i+55];
-            temp.age = [NSString stringWithFormat:@"%d", i+20];
+            temp.firstName = [NSString stringWithFormat:@"Client %d", i+1];
+            temp.lastName = [NSString stringWithFormat:@"Test"];
+            temp.height = [NSString stringWithFormat:@"%@'%d\"", @5, i+6];
+            temp.dateOfBirth = [NSString stringWithFormat:@"%d/%d/%d", i+3, i+20,i+86];
             [_clients addObject:temp];
         }
     }
@@ -143,7 +141,7 @@
 }
 
 - (void)_addClientButtonPressed {
-    AddClientViewController *addClientVC = [[AddClientViewController alloc] init];
+    AddEditClientViewController *addClientVC = [[AddEditClientViewController alloc] init];
     UINavigationController *nvc = [[UINavigationController alloc] initWithRootViewController:addClientVC];
     nvc.modalPresentationStyle = UIModalPresentationPopover;
     nvc.preferredContentSize = CGSizeMake(400, 240);
@@ -153,7 +151,7 @@
 }
 
 - (void)_editClientButtonPressed {
-    EditClientViewController *editClientVC = [[EditClientViewController alloc] init];
+    EditClientTableViewController *editClientVC = [[EditClientTableViewController alloc] init];
     editClientVC.clients = _clients;
     UINavigationController *nvc = [[UINavigationController alloc] initWithRootViewController:editClientVC];
     nvc.modalPresentationStyle = UIModalPresentationPopover;
@@ -182,7 +180,7 @@
     
     // Configure the cell...
     [cell setSelectionStyle:UITableViewCellSelectionStyleNone];
-    cell.clientNameLabel.text = _clients[indexPath.row].clientName;
+    cell.clientNameLabel.text = [NSString stringWithFormat:@"%@ %@",_clients[indexPath.row].firstName, _clients[indexPath.row].lastName];
     [cell updateConstraints];
     return cell;
 }
